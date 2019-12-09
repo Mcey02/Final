@@ -20,8 +20,8 @@
           you do, you'll be done in no time!
     </h3>
 
-    <p>How much time do you have?</p>
-    <select name="Available Hours">
+    <!-- <p>How much time do you have?</p>
+    <select name="Available Hours" id="HoursA">
         <option value="0">0 Hours</option>
         <option value="1">1 Hour</option>
         <option value="2">2 Hours</option>
@@ -30,43 +30,43 @@
         <option value="5">5 Hours</option>
         <option value="6">6 Hours</option>
     </select>
-    <select name="available minutes">
+    <select name="available minutes" id="minutesA">
         <option value="0">0 min</option>
         <option value="15">15 min</option>
         <option value="30">30 min</option>
         <option value="45">45 min</option>
     </select>
-    
+     -->
     <p>What do you have to do today? Enter each item prioritized in-order of importance.</p>
     <label for="Activity1">Activity 1</label>
     <input type="text" name="Activity1" placeholder="Activity">
     <label for="Activity1 Length">Activity Legnth</label>
-    <input type="text" name="Actvity1 Length" placeholder="Estimated Length in Minutes">
+    <input id="Act1" type="text" name="Actvity1 Length" placeholder="Estimated Length in Minutes">
     <br>
     <label for="Activity2">Activity 2</label>
     <input type="text" name="Activity2" placeholder="Activity">
     <label for="Activity2 Length">Activity Legnth</label>
-    <input type="text" name="Actvity2 Length" placeholder="Estimated Length in Minutes">
+    <input id="Act2" type="text" name="Actvity2 Length" placeholder="Estimated Length in Minutes">
     <br>
     <label for="Activity3">Activity 3</label>
     <input type="text" name="Activity3" placeholder="Activity">
     <label for="Activity3 Length">Activity Legnth</label>
-    <input type="text" name="Actvity3 Length" placeholder="Estimated Length in Minutes">
+    <input id="Act3" type="text" name="Actvity3 Length" placeholder="Estimated Length in Minutes">
     <br>
     <label for="Activity4">Activity 4</label>
     <input type="text" name="Activity4" placeholder="Activity">
     <label for="Activity4 Length">Activity Legnth</label>
-    <input type="text" name="Actvity4 Length" placeholder="Estimated Length in Minutes">
+    <input id="Act4" type="text" name="Actvity4 Length" placeholder="Estimated Length in Minutes">
     <br>
     <label for="Activity5">Activity 5</label>
     <input type="text" name="Activity5" placeholder="Activity">
     <label for="Activity5 Length">Activity Legnth</label>
-    <input type="text" name="Actvity5 Length" placeholder="Estimated Length in Minutes">
+    <input id="Act5" type="text" name="Actvity5 Length" placeholder="Estimated Length in Minutes">
     <br>
     <label for="Activity6">Activity 6</label>
     <input type="text" name="Activity6" placeholder="Activity">
     <label for="Activity5 Length">Activity Legnth</label>
-    <input type="text" name="Actvity6 Length" placeholder="Estimated Length in Minutes">
+    <input id="Act6" type="text" name="Actvity6 Length" placeholder="Estimated Length in Minutes">
     
     
     <p>
@@ -74,7 +74,7 @@
         how long?
     </p>
     <label for="Break Length">Break Length</label>
-    <select name="Break Length">
+    <select id="bl" name="Break Length">
         <option value="0">No Breaks</option>
         <option value="5">5 min</option>
         <option value="10">10 min</option>
@@ -84,13 +84,15 @@
         <option value="30">30 min</option>
     </select>
     <label for="Break Frequency">Break Frequency</label>
-    <select name="Break Frequency">
+    <select id="BreakFrequency" name="Break Frequency">
         <option value="0">No Breaks</option>
         <option value="30">30 min</option>
         <option value="60">1 hour</option>
         <option value="90">Hour and a Half</option>
         <option value="120">2 Hours</option>
     </select>
+    <br>
+    <button id="Go">Make Schedule!</button>
 
 
     <script src="final.js"></script> 
