@@ -35,16 +35,86 @@ function ready() {
         let Act1Extra = a1%timeperinterval;
         let Act1Interval = a1 - Act1Extra;
         let Act1WholeIntervals = Act1Interval/timeperinterval;
-        console.log(Act1WholeIntervals);
-        console.log(Act1Extra);
         let i = 1;
         while (i <= Act1WholeIntervals) {
             schedule.push(timeperinterval);
             schedule.push(Break);
             i += 1;
         };
-        schedule.push(Act1Extra);
-        schedule.push(Break);
+        if(Act1Extra != 0) {
+            schedule.push(Act1Extra);
+            schedule.push(Break);
+        };
+        
+        let Act2Extra = a2%timeperinterval;
+        let Act2Interval = a2 - Act2Extra;
+        let Act2WholeIntervals = Act2Interval/timeperinterval;
+        i = 1;
+        while (i <= Act2WholeIntervals) {
+            schedule.push(timeperinterval);
+            schedule.push(Break);
+            i += 1;
+        };
+        if(Act2Extra != 0) {
+            schedule.push(Act2Extra);
+            schedule.push(Break);
+        };
+        
+        let Act3Extra = a3%timeperinterval;
+        let Act3Interval = a3 - Act3Extra;
+        let Act3WholeIntervals = Act3Interval/timeperinterval;
+        i = 1;
+        while (i <= Act3WholeIntervals) {
+            schedule.push(timeperinterval);
+            schedule.push(Break);
+            i += 1;
+        };
+        if(Act3Extra != 0) {
+            schedule.push(Act3Extra);
+            schedule.push(Break);
+        };
+        
+        let Act4Extra = a4%timeperinterval;
+        let Act4Interval = a4 - Act4Extra;
+        let Act4WholeIntervals = Act4Interval/timeperinterval;
+        i = 1;
+        while (i <= Act4WholeIntervals) {
+            schedule.push(timeperinterval);
+            schedule.push(Break);
+            i += 1;
+        };
+        if (Act4Extra != 0) {
+            schedule.push(Act4Extra);
+            schedule.push(Break);
+        };   
+        
+        let Act5Extra = a5%timeperinterval;
+        let Act5Interval = a5 - Act5Extra;
+        let Act5WholeIntervals = Act5Interval/timeperinterval;
+        i = 1;
+        while (i <= Act5WholeIntervals) {
+            schedule.push(timeperinterval);
+            schedule.push(Break);
+            i += 1;
+        };
+        if (Act5Extra != 0) {
+            schedule.push(Act5Extra);
+            schedule.push(Break);
+        };
+        
+        let Act6Extra = a6%timeperinterval;
+        let Act6Interval = a6 - Act6Extra;
+        let Act6WholeIntervals = Act6Interval/timeperinterval;
+        i = 1;
+        while (i <= Act6WholeIntervals) {
+            schedule.push(timeperinterval);
+            schedule.push(Break);
+            i += 1;
+        };
+        if (Act6Extra != 0) {
+            schedule.push(Act6Extra);
+            schedule.push(Break);
+        };
         console.log(schedule);
     };
 }
