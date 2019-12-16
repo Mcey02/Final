@@ -37,13 +37,13 @@ function ready() {
         let Act1WholeIntervals = Act1Interval/timeperinterval;
         let i = 1;
         while (i <= Act1WholeIntervals) {
-            schedule.push(timeperinterval);
-            schedule.push(Break);
+            schedule.push(`${AC1.value} ${timeperinterval}`);
+            schedule.push(`Break ${Break}`);
             i += 1;
         };
         if(Act1Extra != 0) {
-            schedule.push(Act1Extra);
-            schedule.push(Break);
+            schedule.push(`${AC1.value} ${Act1Extra}`);
+            schedule.push(`Break ${Break}`);
         };
         
         let Act2Extra = a2%timeperinterval;
@@ -51,13 +51,13 @@ function ready() {
         let Act2WholeIntervals = Act2Interval/timeperinterval;
         i = 1;
         while (i <= Act2WholeIntervals) {
-            schedule.push(timeperinterval);
-            schedule.push(Break);
+            schedule.push(`${AC2.value} ${timeperinterval}`);
+            schedule.push(`Break ${Break}`);
             i += 1;
         };
         if(Act2Extra != 0) {
-            schedule.push(Act2Extra);
-            schedule.push(Break);
+            schedule.push(`${AC2.value} ${Act2Extra}`);
+            schedule.push(`Break ${Break}`);
         };
         
         let Act3Extra = a3%timeperinterval;
@@ -65,13 +65,13 @@ function ready() {
         let Act3WholeIntervals = Act3Interval/timeperinterval;
         i = 1;
         while (i <= Act3WholeIntervals) {
-            schedule.push(timeperinterval);
-            schedule.push(Break);
+            schedule.push(`${AC3.value} ${timeperinterval}`);
+            schedule.push(`Break ${Break}`);
             i += 1;
         };
         if(Act3Extra != 0) {
-            schedule.push(Act3Extra);
-            schedule.push(Break);
+            schedule.push(`${AC3.value} ${Act3Extra}`);
+            schedule.push(`Break ${Break}`);
         };
         
         let Act4Extra = a4%timeperinterval;
@@ -79,13 +79,13 @@ function ready() {
         let Act4WholeIntervals = Act4Interval/timeperinterval;
         i = 1;
         while (i <= Act4WholeIntervals) {
-            schedule.push(timeperinterval);
-            schedule.push(Break);
+            schedule.push(`${AC4.value} ${timeperinterval}`);
+            schedule.push(`Break ${Break}`);
             i += 1;
         };
         if (Act4Extra != 0) {
-            schedule.push(Act4Extra);
-            schedule.push(Break);
+            schedule.push(`${AC4.value} ${Act4Extra}`);
+            schedule.push(`Break ${Break}`);
         };   
         
         let Act5Extra = a5%timeperinterval;
@@ -93,13 +93,13 @@ function ready() {
         let Act5WholeIntervals = Act5Interval/timeperinterval;
         i = 1;
         while (i <= Act5WholeIntervals) {
-            schedule.push(timeperinterval);
-            schedule.push(Break);
+            schedule.push(`${AC5.value} ${timeperinterval}`);
+            schedule.push(`Break ${Break}`);
             i += 1;
         };
         if (Act5Extra != 0) {
-            schedule.push(Act5Extra);
-            schedule.push(Break);
+            schedule.push(`${AC5.value} ${Act5Extra}`);
+            schedule.push(`Break ${Break}`);
         };
         
         let Act6Extra = a6%timeperinterval;
@@ -107,15 +107,23 @@ function ready() {
         let Act6WholeIntervals = Act6Interval/timeperinterval;
         i = 1;
         while (i <= Act6WholeIntervals) {
-            schedule.push(timeperinterval);
-            schedule.push(Break);
+            schedule.push(`${AC6.value} ${timeperinterval}`);
+            schedule.push(`Break ${Break}`);
             i += 1;
         };
         if (Act6Extra != 0) {
-            schedule.push(Act6Extra);
-            schedule.push(Break);
+            schedule.push(`${AC6.value} ${Act6Extra}`);
+            schedule.push(`Break ${Break}`);
         };
-        console.log(schedule);
+        for(let event of schedule) {
+            sched_elem = document.createElement('p')
+
+            sched_elem.innerHTML = `${event} minutes`
+            big_lad.append(sched_elem)
+            big_lad.append(document.createElement("br"))
+        }
+        console.log(schedule)
+        console.log(big_lad)
     };
 }
 document.addEventListener("DOMContentLoaded", ready);
