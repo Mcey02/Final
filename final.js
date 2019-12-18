@@ -43,7 +43,9 @@ function ready() {
         };
         if(Act1Extra != 0) {
             schedule.push(`${AC1.value} ${Act1Extra}`);
-            schedule.push(`Break ${Break}`);
+            if(a2 != 0) {
+                schedule.push(`Break ${Break}`);
+            };
         };
         
         let Act2Extra = a2%timeperinterval;
@@ -57,7 +59,9 @@ function ready() {
         };
         if(Act2Extra != 0) {
             schedule.push(`${AC2.value} ${Act2Extra}`);
-            schedule.push(`Break ${Break}`);
+            if(a3 != 0) {
+                schedule.push(`Break ${Break}`);
+            };
         };
         
         let Act3Extra = a3%timeperinterval;
@@ -71,7 +75,9 @@ function ready() {
         };
         if(Act3Extra != 0) {
             schedule.push(`${AC3.value} ${Act3Extra}`);
-            schedule.push(`Break ${Break}`);
+            if(a4 != 0) {
+                schedule.push(`Break ${Break}`);
+            };
         };
         
         let Act4Extra = a4%timeperinterval;
@@ -85,7 +91,9 @@ function ready() {
         };
         if (Act4Extra != 0) {
             schedule.push(`${AC4.value} ${Act4Extra}`);
-            schedule.push(`Break ${Break}`);
+            if(a5 != 0) {
+                schedule.push(`Break ${Break}`);
+            };
         };   
         
         let Act5Extra = a5%timeperinterval;
@@ -99,7 +107,9 @@ function ready() {
         };
         if (Act5Extra != 0) {
             schedule.push(`${AC5.value} ${Act5Extra}`);
-            schedule.push(`Break ${Break}`);
+            if(a6 != 0) {
+                schedule.push(`Break ${Break}`);
+            };
         };
         
         let Act6Extra = a6%timeperinterval;
@@ -113,8 +123,8 @@ function ready() {
         };
         if (Act6Extra != 0) {
             schedule.push(`${AC6.value} ${Act6Extra}`);
-            schedule.push(`Break ${Break}`);
         };
+        big_lad.innerHTML = ''
         for(let event of schedule) {
             sched_elem = document.createElement('p')
 

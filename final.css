@@ -1,3 +1,37 @@
 body {
     background: lightyellow
 }
+
+p {
+    font-family: 'Courier Prime', monospace;
+}
+
+label {
+    font-family: 'Courier Prime', monospace;
+}
+
+input {
+    font-family: 'Courier Prime', monospace;
+}
+
+button {
+    font-family: 'Courier Prime', monospace;
+}
+
+select {
+    font-family: 'Courier Prime', monospace;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+}
+
+h3 {
+    font-family: 'Merriweather', serif;
+}
+#big_lad > p {
+    margin:0px;
+}
+br {
+    margin:5px;
+}
